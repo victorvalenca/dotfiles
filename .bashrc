@@ -120,5 +120,5 @@ export GOPATH=~/go
 export LABS=~/CST8234/Labs
 export PATH=$PATH:$LABS:~/go/bin
 
-PS1="\[\e[01;37m\]\w\n\[\e[0m\]\[\e[00;37m\]\[\e[0m\]\[\e[01;32m\]>>>\[\e[0m\] "
+PS1="\[\e[01;37m\]\w\n\[\e[01;34m\]>\[\e[01;36m\]>\[\e[01;32m\]>\[\e[0m\] "
 PS2="\[\e[01;33m\]-->\[\e[0m\] "
