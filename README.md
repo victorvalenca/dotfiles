@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dev
 ===
 
@@ -114,3 +115,9 @@ $ make install
 
 This tool Works For Me™ and patches/feature/problem requests are welcome in the 
 issue tracker. Please keep any patches simple.
+=======
+dotfiles
+========
+
+My Dotfiles, use them however you wish.
+>>>>>>> 9609d78e0728a81252dc8eda09c7984ff26297d6
