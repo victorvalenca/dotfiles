@@ -31,6 +31,7 @@ Plugin 'mattn/vim-metarw-etcd'
 Plugin 'mohitleo9/vim-fidget'
 Plugin 'Lyude/vim-systemd-syntax'
 Plugin 'yosssi/vim-gcss'
+Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 set t_Co=256
 "colorscheme desert
