@@ -2,7 +2,17 @@ set fisher_home ~/.local/share/fisherman
 set fisher_config ~/.config/fisherman
 source $fisher_home/config.fish
 
-set -gx PATH $PATH /usr/local/tomcat/bin
+set -gx TOMCAT /usr/local/apache-tomcat-8.0.32/bin
+set -gx ANDROID_HOME /usr/local/opt/android-sdk
+set -gx CODE $HOME/code
+set -gx HASKELL $HOME/Library/Haskell/bin
+set -gx GOPATH $CODE/go
+set -gx MYSQL /usr/local/mysql/bin
+set -gx MYSQLD /usr/local/mysql/support-files
+
+set -gx PATH $PATH $TOMCAT $ANDROID_HOME $CODE $HASKELL $MYSQL $MYSQLD
+
+export BACKPLANE_TOKEN=aSoV1Lf8wQjbViXxbAS91SrMLsdu_05mYNa99CkEoyJKP6ewybcAeNepkplV6X0wUOIsIdQ4se1BbQRiqeoTIkB1H1CDEfITeqU=
 
 function ixio
 	curl -n -F 'f:1=<-' http://ix.io
@@ -20,5 +30,5 @@ function fish_prompt
 end
 
 function fish_title
-	echo "$USER" (prompt_pwd)
+	echo "$USER" (pwd)
 end
