@@ -115,7 +115,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Function to display git branch if present
+# Source: https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 # Prompt colouring
 # Don't ask me how this works, I used a website to generate these because I lost my patience doing it myself
-PS1="\[\e[01;37m\]\w\n\[\e[01;34m\]>\[\e[01;36m\]>\[\e[01;32m\]>\[\e[0m\] "
+PS1="\[\e[01;37m\\w\[\033[01;33m\]\$(parse_git_branch)\]\n\[\e[01;34m\]>\[\e[01;36m\]>\[\e[01;32m\]>\[\e[0m\] "
 PS2="\[\e[01;33m\]-->\[\e[0m\] "
