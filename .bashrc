@@ -122,5 +122,5 @@ parse_git_branch() {
 }
 # Prompt colouring
 # Don't ask me how this works, I used a website to generate these because I lost my patience doing it myself
-PS1="\[\e[01;32m\]\u\[\e[0m\]@\[\e[01;36m\]\h \[\e[01;37m\\w\[\033[01;33m\]\$(parse_git_branch)\]\n\[\e[01;34m\]>\[\e[01;36m\]>\[\e[01;32m\]>\[\e[0m\] "
+PS1="\[\e[01;32m\]\u\[\e[0m\]@\[\e[01;36m\]\h \[\e[0m\]\w\[\e[01;33m\]\$(parse_git_branch)\]\n\[\e[01;34m\]>\[\e[01;36m\]>\[\e[01;32m\]>\[\e[0m\] "
 PS2="\[\e[01;33m\]-->\[\e[0m\] "
