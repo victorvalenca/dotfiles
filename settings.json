@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "'Source Code Pro',Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
     "editor.fontWeight": "400",
     "go.gopath": "/Users/victor/code/",
